@@ -1,0 +1,24 @@
+Christian McCartney
+
+cdm3735
+
+I did not have a partner for this project.
+
+To run this agent place the unzipped folder in the OpenNERO directory,
+run OpenNERO, select Hw1 at the Start screen, and then select Start again
+in order to start running the agent.
+
+The algorithm implements IDA* by combining code from Depth First Search
+agent and the Generic Search Agent found in Maze as well as using the
+manhattan heuristic in order to instruct the agent to take the most
+optimal next step at every point. The agent continues to search down the
+paths deepening its search until it finds a goal cell. It
+determines the goal cell using the heuristic and a cost value,
+if the value of the cost is greater than the value of the heuristic
+then the new cost will equal the value of the heuristic.
+The cost is then compared to a limit value which is initially 16.
+If the value of the heuristic is less than the limit then the goal cell
+is set to the cell being searched. The limit is set to the value of the 
+newly computed cost. Once the goal cell is determined the algorithm
+searches towards it. Once the goal cell is reached the algorithm
+calculates a new goal cell in the same way until the search terminates.
